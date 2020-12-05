@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+const figlet = require("figlet");
+const lolcatjs = require("lolcatjs");
+const str = figlet.textSync("fightting")
+const res = `说明信息:\n本项目为利用node进行脚手架搭建的项目小实战\n${str}`;
+lolcatjs.options.seed = Math.round(Math.random() * 1000);
+lolcatjs.options.colors = true;
+lolcatjs.fromString(res);
